@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Viktor Earbuds Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="grid-con">
+        <header class="col-span-full" id="main-header">
+          <nav>
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#smartphones">Smartphones</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <li><a href="#tablets">Tablets</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+    </div>
+
+    <model-viewer id="model" src="model/Viktor_Kim_Earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.6253254930734968m 4.809887108922779m -1.9190671399778063m" data-normal="-0.9992294217339137m -0.0006705784147736817m -0.039244274307195945m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-1">
+          <h2>Charging Sensor</h2>
+          <p>Earbud charging sensors offer seamless and hassle-free power management. When placed in their charging case, these sensors automatically initiate recharging, ensuring your earbuds are ready to go when you are. It's a convenient and intelligent feature for uninterrupted listening pleasure.
+          </p>
+        </div>
+      </button>
+      <button class="Hotspot" slot="hotspot-2" data-position="2.1677972513723254m 4.691040554355374m -1.6034940521260057m" data-normal="0.9715164231489015m 0.04673752865554528m 0.23231754769525395m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-2">
+            <h2>Touch Button</h2>
+            <p>Earbud touch buttons provide effortless control at your fingertips. With a simple tap, users can adjust volume, change tracks, answer calls, and activate voice assistants, all without reaching for their device. These intuitive controls enhance the user experience, making on-the-go audio management a breeze.
+            </p>
+          </div>
+      </button>
+      <button class="Hotspot" slot="hotspot-3" data-position="0.5114851360639483m 5.638591465282755m -1.8913344635131528m" data-normal="-0.8257935970683389m 0.5344191524976724m -0.1801696547274372m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-3">
+            <h2>Microphone</h2>
+            <p>Earbud microphones offer clear and convenient audio input for hands-free communication. Designed for optimal voice capture, these tiny but powerful mics ensure crisp calls and accurate voice commands, making them an essential feature for modern on-the-go audio devices.</p>
+          </div>
+      </button>
+      <button class="Hotspot" slot="hotspot-4" data-position="0.32710761689531875m 5.39571425523837m -2.3393376102483217m" data-normal="-0.38186058245757853m -0.5029640487865353m -0.7753771090207748m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-4">
+            <h2>Silicone Ear Plug</h2>
+            <p>Silicone earplugs for earbuds provide superior comfort and noise isolation. Their soft, flexible design molds to your ear, offering a secure fit and enhanced sound quality. Perfect for extended listening sessions, they reduce external distractions for an immersive audio experience.
+            </p>
+          </div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+              View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="images/ar_hand_prompt.png">
+      </div>
+    </model-viewer>
+
+    <section class="description">
+      <div class="grid-con">
+        <section class="col-span-full">
+          <h2 class="buds_title">Evo Earbuds Pro</h2><br>
+            <p class="buds_desc">Evo Earbuds Pro offer a premium audio experience with top-notch noise-cancellation, high-fidelity sound, and a comfortable fit. These wireless earbuds are perfect for active individuals, with their long-lasting battery life and water-resistant design. Intuitive touch controls make managing music and calls a breeze. Elevate your listening experience with the Evo Earbuds Pro, whether you're working out or on the move.
+            </p>
+        </section>
+      </div>
+  
+      <div class="grid-con">
+        <section class="col-span-full" id="charger">
+            <h2 class="buds-title">Charging Sensor</h2><br>
+            <p class="buds_desc">Earbud charging sensors offer seamless and hassle-free power management. When placed in their charging case, these sensors automatically initiate recharging, ensuring your earbuds are ready to go when you are. It's a convenient and intelligent feature for uninterrupted listening pleasure.</p><br>
+        </section>
+      </div>
+  
+      <div class="grid-con">
+        <section class="col-span-full" id="button">
+            <h2 class="buds-title">Touch Button</h2><br>
+            <p class="buds_desc">Earbud touch buttons provide effortless control at your fingertips. With a simple tap, users can adjust volume, change tracks, answer calls, and activate voice assistants, all without reaching for their device. These intuitive controls enhance the user experience, making on-the-go audio management a breeze.</p><br>
+        </section>
+      </div>
+  
+      <div class="grid-con">
+        <section class="col-span-full" id="microphone">
+            <h2 class="buds-title">Microphone</h2><br>
+            <p class="buds_desc">Earbud microphones offer clear and convenient audio input for hands-free communication. Designed for optimal voice capture, these tiny but powerful mics ensure crisp calls and accurate voice commands, making them an essential feature for modern on-the-go audio devices.</p><br>
+        </section>
+      </div>
+  
+      <div class="grid-con">
+        <section class="col-span-full" id="plug">
+            <h2 class="buds-title">Silicone Ear Plug</h2><br>
+            <p>Silicone earplugs for earbuds provide superior comfort and noise isolation. Their soft, flexible design molds to your ear, offering a secure fit and enhanced sound quality. Perfect for extended listening sessions, they reduce external distractions for an immersive audio experience.</p><br>
+        </section>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
