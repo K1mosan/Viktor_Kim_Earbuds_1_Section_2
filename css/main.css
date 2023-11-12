@@ -287,15 +287,11 @@ header {
   .image-right {
     background: url(../images/earbuds_xray.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
   }
   .image-left {
     background: url(../images/earbuds.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
     width: 50%;
-    background-attachment: fixed;
   }
   .image-drag {
     background-color: #666;
