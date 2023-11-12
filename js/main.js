@@ -8,22 +8,18 @@
     {
       title: 'Charging Sensor',
       text: 'Earbud charging sensors offer seamless and hassle-free power management. When placed in their charging case, these sensors automatically initiate recharging, ensuring your earbuds are ready to go when you are. It is a convenient and intelligent feature for uninterrupted listening pleasure.',
-      
     },
     {
       title: 'Touch Button',
       text: 'Earbud touch buttons provide effortless control at your fingertips. With a simple tap, users can adjust volume, change tracks, answer calls, and activate voice assistants, all without reaching for their device. These intuitive controls enhance the user experience, making on-the-go audio management a breeze.',
-
     },
     {
       title: 'Microphone',
       text: 'Earbud microphones offer clear and convenient audio input for hands-free communication. Designed for optimal voice capture, these tiny but powerful mics ensure crisp calls and accurate voice commands, making them an essential feature for modern on-the-go audio devices.',
-
     },
     {
       title: 'Silicone Ear Plug',
       text: 'Silicone earplugs for earbuds provide superior comfort and noise isolation. Their soft, flexible design molds to your ear, offering a secure fit and enhanced sound quality. Perfect for extended listening sessions, they reduce external distractions for an immersive audio experience.',
-
     },
   ]
 
@@ -48,10 +44,10 @@
       const textElement = document.createElement('p');
       textElement.textContent = infoBox.text;
 
-      const imgElement = document.createElement('img');
-      imgElement.src = infoBox.image;
+      // const imgElement = document.createElement('img');
+      // imgElement.src = infoBox.image;
       
-      selected.appendChild(imgElement);
+      // selected.appendChild(imgElement);
       selected.appendChild(titleElement);
       selected.appendChild(textElement);
     });
@@ -178,5 +174,35 @@ let imageCon = document.querySelector('#imageCon'),
   drag.addEventListener('mousedown', onDown);
   document.body.addEventListener('mouseup', onUp);
   document.body.addEventListener('mousemove', onMove);
+
+
+//Driven animations
+gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
+
+    const navLinks = document.querySelectorAll("#main-header nav ul li a");
+
+    function scrollLink(e) {    
+            e.preventDefault(); 
+            console.log(e.currentTarget.hash);
+            let selectedLink = e.currentTarget.hash;
+            gsap.to(window, {duration: 1, scrollTo:{y:`${selectedLink}`, offsetY:100 }});
+    }
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", scrollLink);
+    });
+
+    gsap.to("#box3", 3, 
+		{scrollTrigger: {
+			trigger: "#box3",
+			toggleActions:"restart pause reverse none",
+      markers: true,
+      //start: "top center"
+      start: "tob bottom",
+      end: "center middle"
+		}, 
+		x:300, ease:Bounce.easeOut
+		});
 
 })();
