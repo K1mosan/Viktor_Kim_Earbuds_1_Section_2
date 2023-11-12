@@ -1,110 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Viktor Earbuds Website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet"/>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Responsive Website For Earbuds By Viktor Kim</title>
+</head>
+<body>
 
-    <div class="container">
-
-      <div class="grid-con">
-        <header class="col-span-full" id="main-header">
-          <nav>
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#smartphones">Smartphones</a></li>
-                <li><a href="#laptops">Laptops</a></li>
-                <li><a href="#tablets">Tablets</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-    </div>
-
-    <model-viewer id="model" src="model/Viktor_Kim_Earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
-      <button class="Hotspot" slot="hotspot-1" data-position="0.6253254930734968m 4.809887108922779m -1.9190671399778063m" data-normal="-0.9992294217339137m -0.0006705784147736817m -0.039244274307195945m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation" id="hotspot-1">
-          <h2>Charging Sensor</h2>
-          <p>Earbud charging sensors offer seamless and hassle-free power management. When placed in their charging case, these sensors automatically initiate recharging, ensuring your earbuds are ready to go when you are. It's a convenient and intelligent feature for uninterrupted listening pleasure.
-          </p>
+  <header class="container" id="main-header">
+        <div class="full-width-grid-con">
+          <div class="col-start-1 col-end-4">
+            <nav class="nav_checkbox">
+                <div class="nav_logo">
+                  <img class="main_logo" src="/images/logo_white.png" alt="logo">
+                  <a href="#" class="logo_text">EVO</a>
+                </div>
+                <input type="checkbox" id="tab-nav" class="tab-nav">
+                <label for="tab-nav" class="label">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </label>
+                <ul class="content_nav">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#virtual">VIRTUAL MODEL</a></li>
+                    <li><a href="#xray">X-RAY</a></li>
+                    <li><a href="#contact">CONTACTS</a></li>
+                </ul>
+            </nav>
+          </div>
         </div>
-      </button>
-      <button class="Hotspot" slot="hotspot-2" data-position="2.1677972513723254m 4.691040554355374m -1.6034940521260057m" data-normal="0.9715164231489015m 0.04673752865554528m 0.23231754769525395m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation" id="hotspot-2">
-            <h2>Touch Button</h2>
-            <p>Earbud touch buttons provide effortless control at your fingertips. With a simple tap, users can adjust volume, change tracks, answer calls, and activate voice assistants, all without reaching for their device. These intuitive controls enhance the user experience, making on-the-go audio management a breeze.
-            </p>
-          </div>
-      </button>
-      <button class="Hotspot" slot="hotspot-3" data-position="0.5114851360639483m 5.638591465282755m -1.8913344635131528m" data-normal="-0.8257935970683389m 0.5344191524976724m -0.1801696547274372m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation" id="hotspot-3">
-            <h2>Microphone</h2>
-            <p>Earbud microphones offer clear and convenient audio input for hands-free communication. Designed for optimal voice capture, these tiny but powerful mics ensure crisp calls and accurate voice commands, making them an essential feature for modern on-the-go audio devices.</p>
-          </div>
-      </button>
-      <button class="Hotspot" slot="hotspot-4" data-position="0.32710761689531875m 5.39571425523837m -2.3393376102483217m" data-normal="-0.38186058245757853m -0.5029640487865353m -0.7753771090207748m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation" id="hotspot-4">
-            <h2>Silicone Ear Plug</h2>
-            <p>Silicone earplugs for earbuds provide superior comfort and noise isolation. Their soft, flexible design molds to your ear, offering a secure fit and enhanced sound quality. Perfect for extended listening sessions, they reduce external distractions for an immersive audio experience.
-            </p>
-          </div>
-      </button>
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-              View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="images/ar_hand_prompt.png">
-      </div>
-    </model-viewer>
 
-    <section class="description">
-      <div class="grid-con">
-        <section class="col-span-full">
-          <h2 class="buds_title">Evo Earbuds Pro</h2><br>
-            <p class="buds_desc">Evo Earbuds Pro offer a premium audio experience with top-notch noise-cancellation, high-fidelity sound, and a comfortable fit. These wireless earbuds are perfect for active individuals, with their long-lasting battery life and water-resistant design. Intuitive touch controls make managing music and calls a breeze. Elevate your listening experience with the Evo Earbuds Pro, whether you're working out or on the move.
-            </p>
-        </section>
-      </div>
+  </header>
   
-      <div class="grid-con">
-        <section class="col-span-full" id="charger">
-            <h2 class="buds-title">Charging Sensor</h2><br>
-            <p class="buds_desc">Earbud charging sensors offer seamless and hassle-free power management. When placed in their charging case, these sensors automatically initiate recharging, ensuring your earbuds are ready to go when you are. It's a convenient and intelligent feature for uninterrupted listening pleasure.</p><br>
-        </section>
-      </div>
-  
-      <div class="grid-con">
-        <section class="col-span-full" id="button">
-            <h2 class="buds-title">Touch Button</h2><br>
-            <p class="buds_desc">Earbud touch buttons provide effortless control at your fingertips. With a simple tap, users can adjust volume, change tracks, answer calls, and activate voice assistants, all without reaching for their device. These intuitive controls enhance the user experience, making on-the-go audio management a breeze.</p><br>
-        </section>
-      </div>
-  
-      <div class="grid-con">
-        <section class="col-span-full" id="microphone">
-            <h2 class="buds-title">Microphone</h2><br>
-            <p class="buds_desc">Earbud microphones offer clear and convenient audio input for hands-free communication. Designed for optimal voice capture, these tiny but powerful mics ensure crisp calls and accurate voice commands, making them an essential feature for modern on-the-go audio devices.</p><br>
-        </section>
-      </div>
-  
-      <div class="grid-con">
-        <section class="col-span-full" id="plug">
-            <h2 class="buds-title">Silicone Ear Plug</h2><br>
-            <p>Silicone earplugs for earbuds provide superior comfort and noise isolation. Their soft, flexible design molds to your ear, offering a secure fit and enhanced sound quality. Perfect for extended listening sessions, they reduce external distractions for an immersive audio experience.</p><br>
-        </section>
-      </div>
-    </section>
+  <section class="full-width-grid-con">
+    <div class="col-start-1 col-end-4">
+      <div class="content_section">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <script src="js/main.js"></script>
+        <section>
+          <div class="block_desc">
+            <h1 class="hidden">Welcome to Earbuds Store</h1>
+            <img class="banner_img" src="/images/banner.JPG" alt="main banner">
+            <h2 class="description_title">Immerse in Sound with Evo Pro Earbuds</h2>
+            <p class="description_text">The Wireless Evo Pro Earbuds are a technological marvel that will elevate your audio experience. These earbuds offer seamless connectivity and crystal-clear sound quality, making them a must-have for music enthusiasts and on-the-go professionals. With their sleek design and comfortable fit, you can enjoy hours of listening without any discomfort. The touch-sensitive controls allow for easy playback and call management. These earbuds boast long-lasting battery life, ensuring you won't run out of power during your day. Whether you're working out, commuting, or simply enjoying your favorite tunes, the Wireless Evo Pro Earbuds deliver an exceptional audio experience.
+            </p>
+          </div>
+        </section>
     
-  </body>
+
+        <!-- JPG sequence animation -->
+        <section class="block_animation">
+          <!-- <img src="http://placehold.it/1400x1500" alt="jpg scrolling sequence animation"> -->
+            <div class="full-width-grid-con">
+              <div class="col-span-full">
+                <h2 class="description_title">The hit of this year!</h2>
+                <canvas id="explode-view"></canvas> 
+              </div>
+            </div>
+        </section>
+    
+
+        <!-- AR Model with Hotspots -->
+        <section class="block_model" id="virtual">
+          <div class="full-width-grid-con">
+            <div class="col-span-full">
+              <h2 class="description_title">Check AR model of Evo Pro Earbuds</h2>
+              <!-- <img src="http://placehold.it/1400x900" alt="ar model"> -->
+              <model-viewer id="model" src="model/Viktor_Kim_Earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+              <button class="Hotspot" slot="hotspot-1" data-position="0.6253254930734968m 4.809887108922779m -1.9190671399778063m" data-normal="-0.9992294217339137m -0.0006705784147736817m -0.039244274307195945m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-1">
+                  <!-- <h2>Charging Sensor</h2>
+                  <p>Earbud charging sensors offer seamless and hassle-free power management. When placed in their charging case, these sensors automatically initiate recharging, ensuring your earbuds are ready to go when you are. It's a convenient and intelligent feature for uninterrupted listening pleasure.
+                  </p> -->
+                </div>
+              </button>
+              <button class="Hotspot" slot="hotspot-2" data-position="2.1677972513723254m 4.691040554355374m -1.6034940521260057m" data-normal="0.9715164231489015m 0.04673752865554528m 0.23231754769525395m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-2">
+                    <!-- <h2>Touch Button</h2>
+                    <p>Earbud touch buttons provide effortless control at your fingertips. With a simple tap, users can adjust volume, change tracks, answer calls, and activate voice assistants, all without reaching for their device. These intuitive controls enhance the user experience, making on-the-go audio management a breeze.
+                    </p> -->
+                  </div>
+              </button>
+              <button class="Hotspot" slot="hotspot-3" data-position="0.5114851360639483m 5.638591465282755m -1.8913344635131528m" data-normal="-0.8257935970683389m 0.5344191524976724m -0.1801696547274372m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-3">
+                    <!-- <h2>Microphone</h2>
+                    <p>Earbud microphones offer clear and convenient audio input for hands-free communication. Designed for optimal voice capture, these tiny but powerful mics ensure crisp calls and accurate voice commands, making them an essential feature for modern on-the-go audio devices.</p> -->
+                  </div>
+              </button>
+              <button class="Hotspot" slot="hotspot-4" data-position="0.32710761689531875m 5.39571425523837m -2.3393376102483217m" data-normal="-0.38186058245757853m -0.5029640487865353m -0.7753771090207748m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-4">
+                    <!-- <h2>Silicone Ear Plug</h2>
+                    <p>Silicone earplugs for earbuds provide superior comfort and noise isolation. Their soft, flexible design molds to your ear, offering a secure fit and enhanced sound quality. Perfect for extended listening sessions, they reduce external distractions for an immersive audio experience.
+                    </p> -->
+                  </div>
+              </button>
+              <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+                      View in your space
+              </button>
+              <div id="ar-prompt">
+                  <img src="images/ar_hand_prompt.png">
+              </div>
+            </model-viewer>
+            </div>
+          </div>
+        </section>
+    
+
+        <!-- XRAY model slider -->
+        <section class="block_explode" id="xray">
+          <!-- <img src="http://placehold.it/1400x900" alt="xray model slider"> -->
+          <div class="full-width-grid-con">
+            <section class="col-span-full">
+              <h2 class="description_title">Look inside with our X-RAY 
+                mode</h2>
+                <section id="mobile-tablet-view">
+                  <img src="images/earbuds_xray.jpg" alt="xray earbud">
+                  <img src="images/earbuds.jpg" alt="Regular earbud">
+                </section>
+                <div id="outerShell">
+                    <div id="imageCon">
+                        <!-- xray version -->
+                        <div class="slideImage image-right"></div>
+                        <!-- rendered version -->
+                        <div class="slideImage image-left"></div>
+                        <!-- drag bar -->
+                        <div class="slideImage image-drag"></div>
+                    </div>
+                </div>
+            </section>
+          </div>
+        </section>
+
+
+        <!-- Contact Form -->
+        <section class="contact_container" id="contact">
+          <h2 class="description_title">Contact me</h2>
+          <form>
+            <div class="wrapper">
+              <div class="box">
+                <input type="text" name="fname" id="fname" required>
+                <label for="fname">First name</label>
+              </div>
+              <div class="box">
+                <input type="text" name="lname" id="lname" required>
+                <label for="lname">Last name</label>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="box">
+                <input type="email" name="mail" id="email" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="box">
+                <input type="text" name="tel" id="tel" required>
+                <label for="tel">Mobile</label>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="box">
+                <textarea id="mes" required></textarea>
+                <label for="mes">Type your message</label>
+              </div>
+            </div>
+
+            <input type="submit" name="" value="Send">
+          </form>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="full-width-grid-con">
+    <div class="col-start-1 col-end-4">
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">policy</a></li>
+                <li><a href="#">contacts</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">payment</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>account</h4>
+              <ul>
+                <li><a href="#">manage your account</a></li>
+                <li><a href="#">evo store account</a></li>
+                <li><a href="#">evo.com</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>social media</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
