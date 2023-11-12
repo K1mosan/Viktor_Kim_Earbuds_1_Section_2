@@ -297,16 +297,16 @@ header{
   .image-right {
     background: url(../images/earbuds_xray.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    // background-position: center center;
+    // background-attachment: fixed;
   }
 
   .image-left {
     background: url(../images/earbuds.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
+    // background-position: center center;
     width: 50%;
-    background-attachment: fixed;
+    // background-attachment: fixed;
   }
 
   .image-drag {
