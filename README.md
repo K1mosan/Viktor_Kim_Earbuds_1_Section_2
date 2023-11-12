@@ -1,13 +1,16 @@
-# Viktor_Kim_Earbuds_1_Section_2
+# Viktor_Kim_Earbuds_Web_Dev
 
 ## About
-Welcome to our Earbuds Store – your gateway to premium audio. Discover a symphony of sound, cutting-edge features, and style. Explore the perfect blend of technology and design to enhance your audio journey.
+Welcome to my Earbuds Store – your gateway to premium audio. Discover a symphony of sound, cutting-edge features, and style. Explore the perfect blend of technology and design to enhance your audio journey.
 
-## Functionality 
-Welcome to our innovative webpage! Browse a variety of earbuds and engage with virtual models for a detailed, interactive experience. Choose the perfect earbuds with confidence in our immersive digital showroom.
+## Nav Bar and Footer
+On this site I have created a navigation bar that is fully functional and helps website visitors to quickly and comfortably navigate through the site. And also a footer that contains all the necessary links. Everything works well on different devices (mobile, tablet, desktop).
 
-## Problems
-While creating a virtual model in the Model Viewer, I had a problem with the correct display of the earbuds color on the webpage. No matter how hard I tried to repeat the procedure over and over, the result was the same. I started to think that it is the issue with the Model Viwer Webpage, so I have attached a file of the earbuds so that you can understand and see how they should look like in the assets folder.
+## Functionality
+On this site you can find a number of different animations, xray model, ar model and contact form. I am also trying to create an animation that will consist of multiple jpg images, which should eventually form a scrolling animation on a web page. But for the moment I have set placeholder as the work is not finished yet and needs more time.
+
+## Colors
+Website's color palette is a perfect blend of elegance, trust, simplicity, and sophistication. Black symbolizes elegance, blue instills trust, white exudes simplicity, and dark grey adds sophistication. Together, these colors create a visually appealing and stylish web design that appeals to a wide audience."
 
 ## Creator
-Viktor Kim
+This website is done by Viktor Kim, Interactive Media Design student at Fanshawe College.
