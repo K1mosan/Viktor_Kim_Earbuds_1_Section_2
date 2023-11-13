@@ -9,7 +9,7 @@ I tried to make the design as simple and memorable as possible. It symbolizes th
 ## Nav Bar
 On this website I have created a convenient navigation bar that facilitates and speeds up navigation on the site. When you hover the cursor over the selected section, it is highlighted, which makes it clear that you are in the right place. Also everything is perfectly designed to work on various devices.
 
-# Footer
+## Footer
 At the very bottom of the website there is a convenient panel with all the links that you may need to interact with the site. All links have animation and color highlighting. Works on various devices.
 
 ## Functionality
