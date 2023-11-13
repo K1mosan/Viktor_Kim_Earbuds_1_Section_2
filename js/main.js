@@ -176,7 +176,7 @@ let imageCon = document.querySelector('#imageCon'),
   document.body.addEventListener('mousemove', onMove);
 
 
-//Driven animations
+                          //Driven animations
 gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
 
