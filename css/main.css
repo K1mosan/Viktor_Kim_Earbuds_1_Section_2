@@ -40,6 +40,18 @@ header {
   margin: auto;
 }
 
+#box3 {
+  height: 70px;
+  width: 400px;
+  background-color: rgb(40, 205, 245);
+  color: white;
+}
+
+#box3:hover {
+  color: black;
+  background-color: white;
+}
+
 .nav_logo {
   align-items: center;
   display: flex;
@@ -82,6 +94,20 @@ header {
   margin-top: 5px;
 }
 
+p, h2 {
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .content_nav {
   grid-column: 3;
   list-style: none;
@@ -145,6 +171,8 @@ header {
   display: flex;
   line-height: 30px;
   padding: 50px;
+  font-size: 20px;
+  line-height: 50px;
 }
 
 @media screen and (max-width: 1920px) {
@@ -287,15 +315,11 @@ header {
   .image-right {
     background: url(../images/earbuds_xray.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
   }
   .image-left {
     background: url(../images/earbuds.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
     width: 50%;
-    background-attachment: fixed;
   }
   .image-drag {
     background-color: #666;
@@ -396,7 +420,7 @@ model-viewer {
   width: auto;
   max-width: 1200px;
   height: 700px;
-  background-color: #efefef;
+  background-color: rgb(130, 174, 185);
   margin: 0 auto;
 }
 
@@ -416,10 +440,10 @@ model-viewer {
 
 .HotspotAnnotation {
   visibility: hidden;
-  background: #fff;
+  background: rgb(40, 205, 245);
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   display: block;
   font-family: Futura, Helvetica Neue, sans-serif;
   font-size: 18px;
@@ -435,7 +459,7 @@ model-viewer {
 }
 
 .HotspotAnnotation p {
-  color: #333;
+  color: #000000;
   line-height: 22px;
   font-weight: 300;
 }
