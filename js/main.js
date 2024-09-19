@@ -117,7 +117,7 @@ gsap.to(buds, {
     scrub: 1,
     start: "top top",
     // end: "+=100%",
-    markers: true
+    markers: false
   },
   onUpdate: render, //onUpdate part of GS
 })
@@ -197,7 +197,7 @@ gsap.registerPlugin(ScrollTrigger);
 		{scrollTrigger: {
 			trigger: "#box3",
 			toggleActions:"restart pause reverse none",
-      markers: true,
+      markers: false,
       //start: "top center"
       start: "tob bottom",
       end: "center middle"
